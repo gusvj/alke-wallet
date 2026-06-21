@@ -13,7 +13,7 @@ body {
 }
 
 .wallet-bg {
-  background: linear-gradient(135deg, #0b1f3a, #04d612);
+  background: linear-gradient(135deg, #0b390f, #04d612);
 }
 
 .wallet-bg-light {
@@ -42,7 +42,7 @@ body {
 }
 
 .btn-wallet:hover {
-  background-color: #0b5ed7;
+  background-color: #188518;
   color: white;
 }
 
