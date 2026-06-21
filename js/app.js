@@ -1,5 +1,5 @@
 const defaultUser = {
-  email: "admin@alkewallet.com",
+  email: "gustavov@alkewallet.com",
   password: "123456",
   name: "Gustavo"
 };
