@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depósito | Alke Wallet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="wallet-bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark wallet-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="menu.html">Alke Wallet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navWallet">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navWallet">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="menu.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="deposit.html">Depósito</a></li>
+          <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar dinero</a></li>
+          <li class="nav-item"><a class="nav-link" href="transactions.html">Movimientos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h1 class="fw-bold mb-3">Realizar depósito</h1>
+            <p class="text-muted">Saldo actual: <span class="fw-semibold text-wallet" id="depositCurrentBalance">$0</span></p>
+
+            <form id="depositForm" novalidate>
+              <div class="mb-3">
+                <label for="depositAmount" class="form-label">Monto a depositar</label>
+                <input type="number" class="form-control" id="depositAmount" min="1" placeholder="Ej: 25000" required>
+                <div class="invalid-feedback">Ingresa un monto válido mayor a 0.</div>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-wallet">Realizar depósito</button>
+              </div>
+            </form>
+
+            <div id="depositMessage" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

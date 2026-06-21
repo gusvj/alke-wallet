@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú | Alke Wallet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="wallet-bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark wallet-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="menu.html">Alke Wallet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navWallet">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navWallet">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="deposit.html">Depósito</a></li>
+          <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar dinero</a></li>
+          <li class="nav-item"><a class="nav-link" href="transactions.html">Movimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html" id="logoutBtn">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="mb-4">
+      <h1 class="fw-bold">Bienvenido, <span id="userName">Usuario</span></h1>
+      <p class="text-muted">Gestiona tus activos financieros de manera simple y segura.</p>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm wallet-summary-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Saldo disponible</h5>
+            <p class="display-6 fw-bold text-wallet mb-0" id="currentBalance">$0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm wallet-summary-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Último depósito</h5>
+            <p class="fs-4 fw-semibold mb-0" id="lastDeposit">Sin depósitos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm wallet-summary-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Última transferencia</h5>
+            <p class="fs-4 fw-semibold mb-0" id="lastTransfer">Sin transferencias</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row g-4 mt-2">
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h4 class="mb-3">Acciones rápidas</h4>
+            <div class="d-grid gap-2">
+              <a href="deposit.html" class="btn btn-wallet">Realizar depósito</a>
+              <a href="sendmoney.html" class="btn btn-outline-wallet">Enviar dinero</a>
+              <a href="transactions.html" class="btn btn-outline-secondary">Ver últimos movimientos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h4 class="mb-3">Resumen reciente</h4>
+            <ul class="list-group list-group-flush" id="recentTransactionsMenu">
+              <li class="list-group-item text-muted">No hay movimientos recientes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+:root {
+  --wallet-primary: #0d6efd;
+  --wallet-secondary: #0b1f3a;
+  --wallet-accent: #13c296;
+  --wallet-bg: #f4f7fb;
+  --wallet-card: #ffffff;
+  --wallet-text: #1f2937;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--wallet-text);
+}
+
+.wallet-bg {
+  background: linear-gradient(135deg, #0b1f3a, #0d6efd);
+}
+
+.wallet-bg-light {
+  background-color: var(--wallet-bg);
+}
+
+.wallet-card {
+  border-radius: 18px;
+}
+
+.wallet-navbar {
+  background-color: var(--wallet-secondary);
+}
+
+.text-wallet {
+  color: var(--wallet-primary);
+}
+
+.btn-wallet {
+  background-color: var(--wallet-primary);
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-wallet:hover {
+  background-color: #0b5ed7;
+  color: white;
+}
+
+.btn-outline-wallet {
+  border: 2px solid var(--wallet-primary);
+  color: var(--wallet-primary);
+  font-weight: 600;
+}
+
+.btn-outline-wallet:hover {
+  background-color: var(--wallet-primary);
+  color: white;
+}
+
+.wallet-summary-card {
+  border-radius: 16px;
+  background: var(--wallet-card);
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+}
+
+.success-message {
+  color: #198754;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}

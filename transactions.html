@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Últimos movimientos | Alke Wallet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="wallet-bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark wallet-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="menu.html">Alke Wallet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navWallet">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navWallet">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="menu.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="deposit.html">Depósito</a></li>
+          <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar dinero</a></li>
+          <li class="nav-item"><a class="nav-link active" href="transactions.html">Movimientos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+      <div>
+        <h1 class="fw-bold mb-1">Últimos movimientos</h1>
+        <p class="text-muted mb-0">Consulta depósitos y transferencias recientes.</p>
+      </div>
+      <div class="fw-semibold">Saldo actual: <span class="text-wallet" id="transactionsBalance">$0</span></div>
+    </div>
+
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Detalle</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody id="transactionsTableBody">
+              <tr>
+                <td colspan="4" class="text-center text-muted py-4">No existen movimientos registrados.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
