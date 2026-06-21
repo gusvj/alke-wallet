@@ -1,10 +1,10 @@
 :root {
   --wallet-primary: #09af00;
-  --wallet-secondary: #0b1f3a;
+  --wallet-secondary: #0b3a29;
   --wallet-accent: #00d046;
   --wallet-bg: #f4f7fb;
   --wallet-card: #ffffff;
-  --wallet-text: #1f2937;
+  --wallet-text: #225027;
 }
 
 body {
